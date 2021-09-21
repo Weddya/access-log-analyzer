@@ -7,7 +7,7 @@ use App\Services;
 class View
 {
     /**
-     * @var \App\Services\FileService
+     * @var \App\Services\HttpService
      */
     private Services\HttpService $_httpService;
     

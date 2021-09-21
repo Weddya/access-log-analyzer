@@ -40,7 +40,7 @@ class Report extends Model
      */
     private Services\ArrayService $_arrayService;
     /**
-     * @var \App\Services\ArrayService
+     * @var \App\Services\StringService
      */
     private Services\StringService $_stringService;
     

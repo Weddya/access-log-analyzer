@@ -44,7 +44,7 @@ class HomeController extends Controller
             return $this->_view->json(['Error' => 'File not exists']);
         }
         
-        while (!$this->_file->isFileEnd()){
+        while (!$this->_file->isFileEnd()) {
             $line = $this->_file->getNextLine();
             $lineParts = $this->_file->analyzeLine($line);
             $this->_report
