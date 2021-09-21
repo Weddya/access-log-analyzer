@@ -62,6 +62,7 @@ class Report extends Model
     /**
      * Добавляет новый URL в список
      * @param string $url
+     * @return Report
      */
     public function addUrl(string $url): Report
     {
@@ -72,6 +73,7 @@ class Report extends Model
     /**
      * Добавляет количество трафика к общей сумме
      * @param int $traffic
+     * @return Report
      */
     public function addTraffic(int $traffic): Report
     {
@@ -82,6 +84,7 @@ class Report extends Model
     /**
      * Добавляет поисковых ботов в соответствующий список
      * @param string $userAgent
+     * @return Report
      */
     public function addCrawler(string $userAgent): Report
     {
@@ -95,6 +98,7 @@ class Report extends Model
     /**
      * Добавляет код ответа в соответствующий список
      * @param string $statusCode
+     * @return Report
      */
     public function addStatusCode(string $statusCode): Report
     {

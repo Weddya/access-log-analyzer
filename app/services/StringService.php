@@ -9,9 +9,9 @@ class StringService
      * @param string $haystack
      * @param string $needle
      * @param int $offset 
-     * @return int|false
+     * @return int|null
      */
-    public function strpos(string $haystack, string $needle, int $offset = 0): mixed
+    public function strpos(string $haystack, string $needle, int $offset = 0): ?int
     {
         $result = strpos($haystack, $needle, $offset);
         return $result !== false ? $result : null;
